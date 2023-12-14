@@ -1,0 +1,31 @@
+
+.ecommerce_heroCarousel__content{
+    position: absolute;
+    left: 13%  ;
+    bottom: 20%;
+
+}
+.ecommerce_heroCarousel__content h2 {
+    font-size: 60px ;
+
+}
+@media (max-width: 769px) {
+    .ecommerce_heroCarousel__content  {
+        position: absolute;
+        left: 13%  ;
+        bottom: 5%;
+    }
+    .ecommerce_heroCarousel__content h2 {
+        font-size: 48px ;
+    }
+    .ecommerce_heroCarousel__content h4 {
+        font-size: 13px ;
+    }
+    .ecommerce_heroCarousel__content h3 {
+        font-size: 13px ;
+    }
+    .ecommerce_heroCarousel__content p {
+        font-size: 12px ;
+    }
+  
+}

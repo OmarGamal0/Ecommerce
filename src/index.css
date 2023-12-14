@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+*{
+  margin: 0 ;
+  box-sizing: border-box ;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  background-color: #ffffff;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+a,a:hover {
+ text-decoration: none !important;
+ color:unset !important
+}
+

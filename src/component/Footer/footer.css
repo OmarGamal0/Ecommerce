@@ -1,0 +1,10 @@
+.ecommerce_footer__bg {
+    background-color: #222935 !important;
+    color: white !important;
+    height: auto;
+}
+
+.ecommerce_footer__bg p {
+    color: #aeb4be !important;
+    font-size: 14px !important;
+}
