@@ -1,10 +1,8 @@
 import React, { useContext, useState } from 'react'
-import { Link, Outlet, Route, Routes, } from 'react-router-dom';
-import { AllContentData, MenData, WomenData } from '../../container';
+import { Link, Outlet } from 'react-router-dom';
 import { moodContext } from '../../context/MoodContext';
 
 import './mainContent.css'
-
 function MainContent() {
   let { darkMode } = useContext(moodContext);
 
@@ -20,7 +18,7 @@ function MainContent() {
     }
     set(!x);
   };
-
+  
   return (
     <div className={darkMode ? " dark-mode ecommerce_mainContent" : ""}>
       <div className='container py-4 '>
@@ -41,7 +39,7 @@ function MainContent() {
               </div>
             </div>
           </div>
-          <Outlet/>
+          <Outlet />
         </div>
       </div>
     </div>

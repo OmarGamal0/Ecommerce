@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { MdOutlineShoppingCart } from 'react-icons/md';
 import { BsBag } from "react-icons/bs";
-import { CiCircleMinus , CiCirclePlus} from "react-icons/ci";
+import { CiCircleMinus, CiCirclePlus } from "react-icons/ci";
 import { IoIosClose } from "react-icons/io";
 import { cartItemsContext } from '../../context/CartItemsContext';
 import { bag } from '../../image/image';
@@ -106,7 +106,7 @@ function ShoppingCart() {
               <div className="row">
                 <div className="col-12">
                   <div className="item">
-                    <Link to='CheckOut'><button className='btn btn-danger w-100'>Check out (${totalPrice})</button></Link> 
+                    <Link to='CheckOut'><button className='btn btn-danger w-100'>Check out (${totalPrice})</button></Link>
                   </div>
                 </div>
               </div>

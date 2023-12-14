@@ -16,7 +16,6 @@ function CheckoutPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Order details:', orderDetails);
-    // إضافة المزيد من المنطق لمعالجة تفاصيل الطلب
   };
 
   return (

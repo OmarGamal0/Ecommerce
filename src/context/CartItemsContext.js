@@ -5,8 +5,8 @@ export let cartItemsContext = createContext({});
 
 export function CartItemsContextProvider(props) {
     const [cartItems, setCartItems] = useState(() => {
-      const storedCartItems = localStorage.getItem('cartItems');
-      return storedCartItems ? JSON.parse(storedCartItems) : [];
+        const storedCartItems = localStorage.getItem('cartItems');
+        return storedCartItems ? JSON.parse(storedCartItems) : [];
     });
     const [productsData, setProductsData] = useState([]);
     const [filteredItems, setFilteredItems] = useState([]);
