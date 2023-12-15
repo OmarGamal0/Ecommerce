@@ -1,79 +1,37 @@
 import React, { useState } from 'react';
 
 function CheckoutPage() {
-  const [orderDetails, setOrderDetails] = useState({
-    name: '',
-    address: '',
-    cardNumber: '',
-    expirationDate: '',
-    cvv: ''
-  });
-
-  const handleInputChange = (e) => {
-    setOrderDetails({ ...orderDetails, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Order details:', orderDetails);
-  };
+ 
 
   return (
-    <div className="container mt-5">
-      <h1>Checkout</h1>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>Name:</label>
-          <input
-            type="text"
-            name="name"
-            value={orderDetails.name}
-            onChange={handleInputChange}
-            className="form-control"
-          />
-        </div>
-        <div className="form-group">
-          <label>Address:</label>
-          <input
-            type="text"
-            name="address"
-            value={orderDetails.address}
-            onChange={handleInputChange}
-            className="form-control"
-          />
-        </div>
-        <div className="form-group">
-          <label>Card Number:</label>
-          <input
-            type="text"
-            name="cardNumber"
-            value={orderDetails.cardNumber}
-            onChange={handleInputChange}
-            className="form-control"
-          />
-        </div>
-        <div className="form-group">
-          <label>Expiration Date:</label>
-          <input
-            type="text"
-            name="expirationDate"
-            value={orderDetails.expirationDate}
-            onChange={handleInputChange}
-            className="form-control"
-          />
-        </div>
-        <div className="form-group">
-          <label>CVV:</label>
-          <input
-            type="text"
-            name="cvv"
-            value={orderDetails.cvv}
-            onChange={handleInputChange}
-            className="form-control"
-          />
-        </div>
+<div className="checkout-container container mt-5">
+      <div className="delivery-details mb-3">
+        <h2>Delivery Details</h2>
+        <input type="date" className="form-control mb-2" placeholder="Delivery Date" />
+        <input type="time" className="form-control mb-2" placeholder="Delivery Time" />
+        <input type="text" className="form-control" placeholder="Address" />
+      </div>
+
+      <div className="payment-details mb-3">
+        <h2>Payment Information</h2>
+        <input type="text" className="form-control mb-2" placeholder="Cardholder Name" />
+        <input type="text" className="form-control mb-2" placeholder="Card Number" />
+        <input type="text" className="form-control mb-2" placeholder="Expiration Date" />
+        <input type="text" className="form-control" placeholder="CVV" />
+      </div>
+
+      <div className="voucher-section mb-3">
+        <h2>Voucher</h2>
+        <input type="text" className="form-control" placeholder="Voucher Code" />
+      </div>
+
+      <div className="order-summary mb-3">
+        <h2>Order Summary</h2>
+      </div>
+
+      <div className="submit-button">
         <button type="submit" className="btn btn-primary">Place Order</button>
-      </form>
+      </div>
     </div>
   );
 }

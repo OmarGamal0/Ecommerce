@@ -7,6 +7,7 @@ import { cartItemsContext } from '../../context/CartItemsContext';
 import { bag } from '../../image/image';
 import { Link } from 'react-router-dom';
 
+import './shoppingCart.css'
 function ShoppingCart() {
   let { filteredItems, setFilteredItems, setCartItems, cartItems } = useContext(cartItemsContext);
   const [itemQuantities, setItemQuantities] = useState({});
@@ -46,7 +47,7 @@ function ShoppingCart() {
 
   return (
     <>
-      <button className="btn btn-danger position-fixed rounded-circle p-2 shadow position-relative" style={{ right: '2%', bottom: '4%', zIndex: '3000' }} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      <button className="ecommerce_shoppingCart__cartButton btn btn-danger position-fixed rounded-circle p-2 shadow position-relative"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
         <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">{filteredItems.length > 0 ? filteredItems.length : ''}</span>
         <MdOutlineShoppingCart className='fs-3' />
       </button>
@@ -106,7 +107,7 @@ function ShoppingCart() {
               <div className="row">
                 <div className="col-12">
                   <div className="item">
-                    <Link to='CheckOut'><button className='btn btn-danger w-100'>Check out (${totalPrice})</button></Link>
+                    <Link to='CheckOut'><button className='btn btn-danger w-100'type="button"  data-bs-dismiss="offcanvas" aria-label="Close" >Check out (${totalPrice})</button></Link>
                   </div>
                 </div>
               </div>

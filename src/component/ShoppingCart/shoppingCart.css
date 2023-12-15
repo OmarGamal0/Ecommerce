@@ -1,0 +1,13 @@
+.ecommerce_shoppingCart__cartButton{
+    right: 2%;
+    bottom: 4%;
+    z-index: 3000;
+}
+
+@media (max-width: 769px){
+    .ecommerce_shoppingCart__cartButton{
+        right: 5%;
+        bottom: 4%;
+    }
+   
+}

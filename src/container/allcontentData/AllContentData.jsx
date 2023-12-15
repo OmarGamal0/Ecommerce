@@ -17,7 +17,7 @@ function AllContentData() {
     <>
       {data ? data.map((product, index) => (
         <React.Fragment key={index}>
-          <div className="col-md-3 py-1 my-1 ">
+          <div className="col-md-3 col-sm-6 py-1 my-1 ">
             <div className="ecommerce_mainContent__card card text-center "  >
               <img src={product.attributes.productImg.data[0].attributes.url} className="card-img-top p-4" alt="..." data-bs-toggle="modal" data-bs-target={`#exampleModal${index}`}/>
 

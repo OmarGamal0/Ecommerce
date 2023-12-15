@@ -23,6 +23,12 @@
 
 @media (max-width: 769px) {
     .ecommerce_mainContent__card{
-        height: 625px !important;
+        height: 500px !important;
+    }
+}
+
+@media (max-width: 576pX) {
+    .ecommerce_mainContent__card{
+        height: 650px !important;
     }
 }
