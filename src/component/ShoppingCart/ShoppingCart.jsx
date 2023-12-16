@@ -9,9 +9,7 @@ import { Link } from 'react-router-dom';
 
 import './shoppingCart.css'
 function ShoppingCart() {
-  let { filteredItems, setFilteredItems, setCartItems, cartItems } = useContext(cartItemsContext);
-  const [itemQuantities, setItemQuantities] = useState({});
-  const [totalPrice, setTotalPrice] = useState(0);
+  let { filteredItems, setFilteredItems, setCartItems, cartItems , itemQuantities ,setItemQuantities ,totalPrice , setTotalPrice} = useContext(cartItemsContext);
 
   const increaseQuantity = (productId) => {
     const updatedQuantities = { ...itemQuantities };
